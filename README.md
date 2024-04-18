@@ -1,12 +1,32 @@
-"# capacitaci-nAPI" 
-Este ejercicio muestra como usar los JSON Web Token para retornar ciertas respuestas deseadas. Muestra como, después de que un usuario se haya logueado, el sistema devuelve el JWT y en base a ese token y al rol que se le haya asignado, el usuario obtendrá una respuesta.
-
+"# capacitaciónAPI"
+<br> 
 En este ejercicio hice una especie de sistema que tiene tres diferentes roles para el usuario:
 1. Administrador
 2. Moderador
 3. Usuario normal
 
 Dependiendo de que rol tiene el usuario, podrá ver diferentes contenidos. En caso de que tenga más de un rol (Ej. Un usario Administrador que tambien sea Usuario Normal) podrá ver los contenidos dependiendo de los roles que tenga. 
+
+Usa el JSON Web Token para retornar ciertas respuestas. Muestra como, después de que un usuario se haya logueado, el sistema devuelve el JWT y en base a ese token y al rol que se le haya asignado, el usuario obtendrá una respuesta. 
+<html>
+    <center>
+        <img src="./imagenes/JWT.png"><img>
+    <center>
+    <br>
+    <center>
+        <img src="./imagenes/acceso_concedido.png"><img>
+    <center>
+</html>
+
+
+
+En caso de que no tenga el rol y quiera ver el contenido de un rol diferente aprecerá un mensaje que tiene que tener el permiso de ese rol
+<html>
+    <center>
+        <img src="./imagenes/acceso_denegado.png"><img>
+    <center>
+</html>
+Aqui el usuario no tiene permiso de administrador, por lo que el sisteme devuelve un 403 y un mensaje diciendo que tiene que tener el rol de admin para poder ver el contenido
 
 Por medio de API's se crean los usuario y se llaman los contenidos de cada rol. Los usuario se almacenan en una base de datos MYSQL en la cual hay tres tablas:
 1. roles
