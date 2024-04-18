@@ -1,10 +1,14 @@
 <h1>Token Based Authentication & Authorization</h1>
 <br> 
 En este ejercicio hice una especie de sistema que tiene tres diferentes roles para el usuario:
-1. Administrador
-2. Moderador
-3. Usuario normal
-
+<html>
+    <ol>
+        <li>Administrador</li>
+        <li>Moderador</li>
+        <li>Usuario normal</li>
+    </ol>
+</html>
+<br>
 Dependiendo de que rol tiene el usuario, podrá ver diferentes contenidos. En caso de que tenga más de un rol (Ej. Un usario Administrador que tambien sea Usuario Normal) podrá ver los contenidos dependiendo de los roles que tenga. 
 
 Usa el JSON Web Token para retornar ciertas respuestas. Muestra como, después de que un usuario se haya logueado, el sistema devuelve el JWT y en base a ese token y al rol que se le haya asignado, el usuario obtendrá una respuesta. 
