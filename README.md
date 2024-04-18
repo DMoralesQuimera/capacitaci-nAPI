@@ -18,7 +18,7 @@ Usa el JSON Web Token para retornar ciertas respuestas. Muestra como, después d
     <center>
 </html>
 
-En caso de que no tenga el rol del que quiera ver el contenido, aprecerá un mensaje que tiene que tener el rol del que busca
+En caso de que no tenga el rol del que quiera ver el contenido, aprecerá un mensaje que tiene que tener el rol del que busca.
 <html>
     <center>
         <img src="./imagenes/acceso_denegado.png"><img>
